@@ -19,7 +19,8 @@
  */
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
-//
+// const infuraKey = "2ab949d504bd43c4ac737338df28bf0b";
+
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
@@ -43,7 +44,7 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "127.0.0.1",     // Localhost (default: none)
+      host: "http://ec2-54-180-152-10.ap-northeast-2.compute.amazonaws.com",     // Localhost (default: none)
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
@@ -61,7 +62,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
     // ropsten: {
-    //   provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
+    //   provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/2ab949d504bd43c4ac737338df28bf0b`),
     //   network_id: 3,       // Ropsten's id
     //   gas: 5500000,        // Ropsten has a lower block limit than mainnet
     //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
