@@ -1,3 +1,4 @@
+//ganache-cli -h 0.0.0.0:8545
 import React, { useEffect, useState } from "react";
 import {FileUpload} from './components/FileUpload';
 import "./App.css";

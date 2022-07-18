@@ -97,7 +97,8 @@
       "name": "sendTrans",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -152,7 +153,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -165,7 +167,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"category\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"time\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"ipfs_hash\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"registrant\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"responsible_manager\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"file_type\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"file_description\",\"type\":\"string\"}],\"name\":\"handleTransaction\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"cntTransactions\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllTransactions\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"category\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"ipfs_hash\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"registrant\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"responsible_manager\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"file_type\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"file_description\",\"type\":\"string\"}],\"internalType\":\"struct Transaction.transaction\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"category\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"ipfs_hash\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"registrant\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"responsible_manager\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"file_type\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"file_description\",\"type\":\"string\"}],\"name\":\"sendTrans\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Transaction.sol\":\"Transaction\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Transaction.sol\":{\"keccak256\":\"0x0ace23ab3880eb64574bfb4530e8ef5dcac19a75c82a961220793f14499a80c6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b85795b6821bcc9cba3d582acb64e3722c1407c140d9b9a44c22601c27b44c1f\",\"dweb:/ipfs/QmZR8t4KewUzDJyMYBmXVrcmX6P4LqCyLaMJR4vFrNC61N\"]}},\"version\":1}",
@@ -8237,6 +8240,12 @@
     "version": "0.8.14+commit.80d49f37.Emscripten.clang"
   },
   "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x47690e1241505d2888e8738acFf5850e38C28284",
+      "transactionHash": "0x3af354e79bc6c8f45a074ea1cc7e7227377b354362800edc72fead740f63725a"
+    },
     "1656994691039": {
       "events": {},
       "links": {},
@@ -8302,10 +8311,17 @@
       "links": {},
       "address": "0x8b22eF6fA56FdE7BA2A6e2bC87f9D739531f6222",
       "transactionHash": "0xde23abbdb3bded4623f278a841409f3289831aabf7fe57afb6f3be284b5258b9"
+    },
+    "1658123583688": {
+      "events": {},
+      "links": {},
+      "address": "0x12D0b86D5Ad702F57eAD1B1561A958fCab2232b7",
+      "transactionHash": "0x65ed6f7f731296945e317a83109b2d5d66a7cb07c6c48ca426e73926ab73a686"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-18T05:55:24.543Z",
+  "updatedAt": "2022-07-18T06:16:12.009Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
