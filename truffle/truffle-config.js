@@ -43,8 +43,8 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "http://ec2-54-180-152-10.ap-northeast-2.compute.amazonaws.com",     // Localhost (default: none)
-      port: 3000,            // Standard Ethereum port (default: none)
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
     //
